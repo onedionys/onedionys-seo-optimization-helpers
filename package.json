@@ -1,6 +1,6 @@
 {
   "name": "onedionys-seo-optimization-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "One Dionys (SEO Optimization Helpers) - Functions and components that assist in optimizing web applications for search engines, including meta tag settings and URL structure.",
   "main": "src/index.js",
   "directories": {
