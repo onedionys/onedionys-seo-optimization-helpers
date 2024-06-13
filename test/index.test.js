@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 const { generateMetaTags } = require('../src/seoHelpers');
-const Logger = require("logoligi");
+const Logger = require("logoligi").default;
 const sinon = require("sinon");
 
 describe("SEO Optimization Helpers", () => {
@@ -37,6 +37,7 @@ describe("SEO Optimization Helpers", () => {
       process.env.NODE_ENV = originalEnv;
 
       // Check if Logger.log was called with the expected meta tags
+      console.log("logger", Logger);
       assert(
         logStub.calledWith(expectedMetaTags, {
           color: "blue",

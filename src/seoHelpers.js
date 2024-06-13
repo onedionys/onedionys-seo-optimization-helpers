@@ -3,7 +3,7 @@
 /**
  * SEO Optimization Helpers
  */
-const Logger = require("logoligi");
+const Logger = require("logoligi").default;
 
 // Get the current environment
 const env = process.env.NODE_ENV;
@@ -27,7 +27,6 @@ function generateMetaTags(title, description, keywords, options = {}) {
 `;
 
   // If the log option is true and the environment is dev, log the meta tags
-  console.log(options, "env", env);
   if (options?.log && env !== "production") {
     console.log("logging meta tags");
     Logger.log(metaTags, {
